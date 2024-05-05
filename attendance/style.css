@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#header {
+  padding: 100px 400px;
+  text-align: center;
+  background-image: url('imej/headcina.png'); 
+  background-size: cover;
+  background-position: center;
+  color: white; 
+
+}
+
+#menu {
+  background-color: #ff4400;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  
+}
+
+#menu li {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu li:hover,
+.menu-active {
+  background-color: #c82d0a;
+  border-radius: 5px;
+}
+
+#menu a {
+  line-height: 25px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#makluman {
+  background-color: mistyrose;
+  width: 500px;
+  border: 2px solid darkgrey;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#tajuk {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.details {
+  font-weight: 600;
+}
+
+#senarai
+{
+  width: 70%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#senarai th,
+#senarai td {
+  padding: 12px 15px;
+  text-align: left;
+  border-right: 1px solid #ddd;
+}
+
+#senarai th
+{
+  background-color: #d40000;
+  color: white;
+}
+
+#senarai td {
+  text-align: center;
+  padding: 5px;
+}
+
+#senarai td:nth-child(2),
+#senarai td:nth-child(3) {
+  text-align: left;
+}
+
+#senarai tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#senarai tr:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+  table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+  #senarai th, 
+  #senarai td {
+      white-space: nowrap;
+  }
+}
+
+#senarai {
+  margin: 0 auto 15px;
+}
+
+#borang {
+  background-color: mistyrose;
+  width: 400px;
+  border: 2px solid darkgrey;
+  margin: 50px auto;
+  padding: 15px;
+  display: grid;
+  border-radius: 8px;
+}
+
+#borang input,
+#borang select {
+  margin-bottom: 10px;
+  height: 25px;
+  font-size: 18px;
+}
+
+#borang button {
+  margin: 0 auto 10px;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.hadir {
+  color: green;
+}
+
+.xhadir {
+  color: red;
+}
+
+#cetak {
+  display: block;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+  margin: 15px auto;
+}
+
+#status {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#status input {
+  margin: 0;
+  height: 20px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.btnUbahSaiz {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.btnUbahSaiz button {
+  font-size: 20px;
+  text-align: center;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.infokotak {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 50px auto;
+}
+
+#activity-slider .slide {
+  display: none; /* Hide all slides initially */
+}
+
+#activity-slider .slide.active {
+  display: block; /* Show active slide */
+}
+
+#activity-slider button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.stylish-button {
+  background-color: #bf400e;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.stylish-button:hover {
+  background-color: #ff0505;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stylish-button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tekskepala{
+  line-height: 1.8;
+}
+
+.footer-bottom {
+  background-color: #bb0f0f;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
